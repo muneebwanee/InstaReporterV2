@@ -3,6 +3,7 @@
 <div align="center">  
   
 
+```
 ╭━━╮╱╱╱╱╱╭╮╱╱╱╭━━━╮╱╱╱╱╱╱╱╱╱╱╭╮
 ╰┫┣╯╱╱╱╱╭╯╰╮╱╱┃╭━╮┃╱╱╱╱╱╱╱╱╱╭╯╰╮
 ╱┃┃╭━╮╭━┻╮╭╋━━┫╰━╯┣━━┳━━┳━━┳┻╮╭╋━━┳━╮
@@ -10,7 +11,8 @@
 ╭┫┣┫┃┃┣━━┃╰┫╭╮┃┃┃╰┫┃━┫╰╯┃╰╯┃┃┃╰⫔┃━┫┃
 ╰━━┻╯╰┻━━┻━┻╯╰┻╯╰━┻━━┫╭━┻━━┻╯╰━┻━━┻╯
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃
-╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰╯--V2
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰╯  -V2
+```
   
 **🚀 Lightweight, Thread-Based Instagram Content Reporting Tool** *A streamlined and efficient automation tool built with a multi-threaded architecture.* [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)  
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
@@ -74,7 +76,7 @@ pip install requests colorama
  * Run the application ```bash
    python InstaReporterV2.py
 <!-- end list -->
-  
+  ```
 ---  
   
 ## 📋 Usage Guide  
@@ -109,7 +111,8 @@ proxy2.example.com:3128
 - **Proxy Utilities** (`modules/proxy_utils.py`): Proxy scraping, loading, and formatting.
 - **Utility Suite** (`modules/utils.py`): Console interface (colors, banners) and file operations.
   
-### 🔄 **Workflow Architecture** ```mermaid  
+### 🔄 **Workflow Architecture** 
+```mermaid  
 graph TB  
     A[User Input] --> B{Proxy Choice}  
     B -->|Scrape| C[Proxy Scraper]  
@@ -124,6 +127,7 @@ graph TB
     H --> J[Run Concurrent Attacks]
     I --> J
     J --> K[Success/Error Reporting]  
+```
 
 🎯 Attack Process Flow 1. Session Initialization: Create HTTP session with proxy configuration.
  * Authentication Chain: Facebook → Instagram cookie extraction.
