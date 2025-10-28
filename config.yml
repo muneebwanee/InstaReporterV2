@@ -1,0 +1,4 @@
+proxy_file: proxies.txt  # Optional, comment out to use API proxies
+max_retries: 3
+timeout: 10
+user_agent_rotation: true
