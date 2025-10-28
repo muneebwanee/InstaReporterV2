@@ -56,27 +56,37 @@ InstaReporterV2 is a complete rewrite focused on **simplicity, performance, and 
   
 ### Prerequisites  
   
-```bash  
-# Python 3.7 or higher required
-python --version  
 
-Installation
- * Clone the repository ```bash
+#### Python 3.7 or higher required
+python --version
+ 
+### Installation
+ 
+  * Clone the repository
+
+```
    git clone https://github.com/muneebwanee/InstaReporterV2.git
    cd InstaReporterV2
+```
 <!-- end list -->
   
-2. **Install dependencies** ```bash  
+* Install dependencies
+   
+```  
 # Install from requirements.txt
 pip install -r requirements.txt
+```
 
-# Or manually
+* Or manually
+
+```
 pip install requests colorama  
+```
 
- * Run the application ```bash
-   python InstaReporterV2.py
-<!-- end list -->
-  ```
+ * Run the application
+```
+python InstaReporterV2.py
+```
 ---  
   
 ## 📋 Usage Guide  
@@ -148,7 +158,8 @@ graph TB
 📦 Dependencies - requests[socks] - HTTP client with SOCKS proxy support
  * colorama - Cross-platform colored terminal text
 🛠️ Development
-📁 Project Structure ```
+📁 Project Structure
+```
 InstaReporterV2/
 ├── InstaReporterV2.py    # Main application entry point
 ├── requirements.txt      # Project dependencies
@@ -160,7 +171,8 @@ InstaReporterV2/
 │   ├── logo.py           # ASCII art and UI elements
 │   └── check_modules.py  # Dependency validation
 └── README.md             # This file
-  
+  ```
+
 ### 🔍 **Key Functions** - `profile_attack_threaded()` / `video_attack_threaded()`: Worker functions for threads.
 - `report_profile_attack()` / `report_video_attack()`: Core attack logic.
 - `load_proxies()`: Loads proxies from `proxies.txt`.
