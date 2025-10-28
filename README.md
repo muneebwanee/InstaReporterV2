@@ -29,7 +29,7 @@ InstaReporterV2 is a complete rewrite focused on **simplicity, performance, and 
 - **Lightweight Threading**: Replaced the heavy `multiprocessing` module with a more efficient `threading` model for concurrent operations.
 - **Dependency Free**: Removed complex dependencies like `proxybroker` and `asyncio`. V2 only requires `requests` and `colorama`.
 - **Built-in Proxy Scraper**: Integrated a lightweight proxy scraper that fetches fresh proxies from free proxy websites, removing the need for third-party libraries.
-- **Refactored Codebase**: Simplified project structure (`modules/`) and improved code readability.
+- **Refactored Codebase**: Simplified project structure (`src/`) and improved code readability.
   
 ---  
   
@@ -114,13 +114,7 @@ proxy2.example.com:3128
   
 ---  
   
-## 🏗️ Architecture Overview  
-  
-### 🔧 **Core Components** - **Main Orchestrator** (`InstaReporterV2.py`): Thread management and user interaction.
-- **Attack Engine** (`modules/attack.py`): HTTP request handling and form submission.
-- **Proxy Utilities** (`modules/proxy_utils.py`): Proxy scraping, loading, and formatting.
-- **Utility Suite** (`modules/utils.py`): Console interface (colors, banners) and file operations.
-  
+
 ### 🔄 **Workflow Architecture** 
 ```mermaid  
 graph TB  
@@ -157,21 +151,7 @@ graph TB
  * Network: Stable internet connection
 📦 Dependencies - requests[socks] - HTTP client with SOCKS proxy support
  * colorama - Cross-platform colored terminal text
-🛠️ Development
-📁 Project Structure
-```
-InstaReporterV2/
-├── InstaReporterV2.py    # Main application entry point
-├── requirements.txt      # Project dependencies
-├── modules/
-│   ├── attack.py         # Core attack functionality
-│   ├── proxy_utils.py    # Proxy scraping and management
-│   ├── user_agents.py    # Browser user agent rotation
-│   ├── utils.py          # Utility functions (UI, colors)
-│   ├── logo.py           # ASCII art and UI elements
-│   └── check_modules.py  # Dependency validation
-└── README.md             # This file
-  ```
+
 
 ### 🔍 **Key Functions** - `profile_attack_threaded()` / `video_attack_threaded()`: Worker functions for threads.
 - `report_profile_attack()` / `report_video_attack()`: Core attack logic.
